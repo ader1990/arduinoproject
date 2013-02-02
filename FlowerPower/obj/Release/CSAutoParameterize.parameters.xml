@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="FlowerConnection-Web.config Connection String" description="FlowerConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:ekhy08f88a.database.windows.net,1433;Database=hallo;User ID=avladu@ekhy08f88a;Password=Passw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\adrian\\Documents\\GitHub\\flowerpower\\FlowerPower\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FlowerConnection']/@connectionString" />
-  </parameter>
-</parameters>
