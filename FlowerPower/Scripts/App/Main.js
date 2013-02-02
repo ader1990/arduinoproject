@@ -6,8 +6,8 @@
   "Router",
   "backbone"
 ],
-  
-function (app, Router,Backbone) {
+
+function (app, Router, Backbone) {
 
     // Define your master router on the application namespace and trigger all
     // navigation from this instance.
@@ -15,7 +15,7 @@ function (app, Router,Backbone) {
 
     // Trigger the initial route and enable HTML5 History API support, set the
     // root folder to '/' by default.  Change in app.js.
-    Backbone.history.start({ pushState: true, root: app.root });
+    Backbone.history.start();
 
     // All navigation that is relative should be passed through the navigate
     // method, to be processed by the router. If the link has a `data-bypass`
@@ -37,6 +37,12 @@ function (app, Router,Backbone) {
             // calls this anyways.  The fragment is sliced from the root.
             Backbone.history.navigate(href.attr, true);
         }
+    });
+    $(".link").live("click", function () {
+        $(".button").css("z-index", 0);
+        $(".link").removeClass("selected");
+        $(this).addClass("selected");
+        $(this).css("z-index", 100);
     });
 
 });

@@ -5,21 +5,54 @@
 ],
 
 function (app, Backbone) {
-
-    // Defining the application router, you can attach sub routers here.
     var Router = Backbone.Router.extend({
         routes: {
-            "": "index"
+            "/": "index",
+            "": "index",
+            "#": "index",
+            "flowers": "index",
+            "placeholder": "placeholder",
+            "enviroment": "enviroment",
         },
-
+        placeholder: function () {
+            var placeholder = "#placeholders";
+            $(placeholder).parent().children().hide();
+            $(placeholder).show();
+        },
+        enviroment: function () {
+            var placeholder = "#enviroment";
+            $(placeholder).parent().children().hide();
+            $(placeholder).show();
+        },
         index: function () {
-            $(".button").live("click", function () {
-                $(".button").css("z-index", 0);
-                $(".button").removeClass("selected");
-                $(this).addClass("selected");
-                $(this).css("z-index", 100);
-                $(".content-placeholder").css("background-color", $(this).css("background-color"));
-                $(".content-placeholder").removeClass("box-shadow", $(".content-placeholder").css("box-shadow"));
+            var placeholder = "#flowers";
+            $(placeholder).parent().children().hide();
+            $(placeholder).show();
+            $(".flower-menu a").css("z-index", 0);
+            $(".link").removeClass("selected");
+            $(".flower-menu a").addClass("selected");
+            $(".flower-menu a").css("z-index", 100);
+            $.ajax({
+                url: "/api/flowers",
+                type: "POST",
+                data: {
+                    Name: "Flower Power",
+                }
+            }).success(function () {
+                $.ajax({
+                    url: "/api/flowers",
+                    type: "GET"
+                }).success(function (data) {
+                    console.log(data);
+
+                    for (var i in data) {
+                        $.ajax({
+                            url: "/api/flowers/" + data[i].Id,
+                            type: "DELETE"
+                        });
+                        $("#flowers").append("<p>" + data[i].Name + "</p>");
+                    }
+                });
             });
         }
     });

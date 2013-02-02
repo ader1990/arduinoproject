@@ -122,6 +122,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\FlowersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JasmineController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -194,7 +195,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\bg.png" />
+    <Content Include="Images\flowers_44.jpg" />
+    <Content Include="Images\icon_floare.png" />
+    <Content Include="Images\icon_conditii.png" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\nice-flowers.jpg" />
+    <Content Include="Images\zicon_floare.png" />
+    <Content Include="Images\icon_ghiveci.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\logo2.png" />
+    <Content Include="Images\logo_flower_power.png" />
     <Content Include="Scripts\App\Config.js" />
     <Content Include="Scripts\App\App.js" />
     <Content Include="Scripts\App\JasmineMain.js" />
@@ -214,6 +224,8 @@
     <Content Include="Scripts\jasmine-samples\Song.js" />
     <Content Include="Scripts\jasmine-samples\SpecHelper.js" />
     <Content Include="Scripts\jasmine\MIT.LICENSE" />
+    <None Include="Properties\PublishProfiles\karma - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\karma - Web Deploy.pubxml" />
     <None Include="Scripts\lib\jquery.validate-vsdoc.js" />
     <None Include="Scripts\lib\jquery-1.7.2.intellisense.js" />
     <Content Include="Scripts\lib\jquery-1.7.2.js" />
