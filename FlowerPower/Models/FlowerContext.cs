@@ -13,5 +13,6 @@ namespace FlowerPower.Models
         {
         }
         public DbSet<Flower> Flowers { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
     }
 }

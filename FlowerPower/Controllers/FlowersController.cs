@@ -19,7 +19,7 @@ namespace FlowerPower.Controllers
         // GET api/Flowers
         public IEnumerable<Flower> GetFlowers()
         {
-            return db.Flowers.AsEnumerable();
+            return db.Flowers.Where(x => true).AsEnumerable();
         }
 
         // GET api/Flowers/5

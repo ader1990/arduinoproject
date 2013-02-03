@@ -1,11 +1,15 @@
-﻿using System;
+﻿using FlowerPower.App_Start;
+using FlowerPower.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using WebMatrix.WebData;
 
 namespace FlowerPower
 {
@@ -22,6 +26,9 @@ namespace FlowerPower
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer<FlowerContext>(null);
+            WebSecurity.InitializeDatabaseConnection("FlowerConnection", "UserProfile", "Id", "Name", autoCreateTables: true);
+            AuthConfig.RegisterAuth();
         }
     }
 }
