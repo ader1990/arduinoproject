@@ -66,3 +66,4 @@ C:\Users\adrian\Documents\GitHub\flowerpower\FlowerPower.Tests\bin\Debug\EntityF
 C:\Users\adrian\Documents\GitHub\flowerpower\FlowerPower.Tests\obj\Debug\FlowerPower.Tests.csprojResolveAssemblyReference.cache
 C:\Users\adrian\Documents\GitHub\flowerpower\FlowerPower.Tests\obj\Debug\FlowerPower.Tests.dll
 C:\Users\adrian\Documents\GitHub\flowerpower\FlowerPower.Tests\obj\Debug\FlowerPower.Tests.pdb
+D:\_AWork\Hackathon Win8\3rdEye\repository\arduinoproject\FlowerPower.Tests\obj\Debug\FlowerPower.Tests.csprojResolveAssemblyReference.cache

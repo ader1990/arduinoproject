@@ -103,9 +103,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlowerPower\FlowerPower.csproj">
+    <ProjectReference Include="..\ThirdEye\ThirdEye.csproj">
       <Project>{32F191EA-712C-4B87-97AC-28B5F87B3D59}</Project>
-      <Name>FlowerPower</Name>
+      <Name>ThirdEye</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
