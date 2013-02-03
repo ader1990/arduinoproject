@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <script data-main="/Scripts/App/Config" src="/Scripts/lib/require.js"></script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="left-left-part ">
+            <div id="menu_operation" style="display: none;">
+                <div class="operation_button add-button">Add</div>
+                <div class="operation_button update-button">Edit</div>
+                <div class="operation_button delete-button">Del</div>
+            </div>
+        </div>
+        <div class="content-wrapper-wrapp">
+            <div id="header">
+                <div class="left-part logo-placehodler">
+                    <a href="/">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <div class="right  right-part ">
+                    <div id="motto">FUNtasting Robot Remote Control</div>
+                    <div id="user-info">Hello, I can read your mind</div>
+                </div>
+            </div>
+            <div id="body">
+                <div class="menu left-part ">
+                    <div class="flower-menu button blue ">
+                        <div>
+                            <a class="link" href="/#flowers">
+                                <img class="link_img" src="/Images/icon_floare_s.png" /><div class="link_txt">Flowers</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button red">
+                        <div>
+                            <a class="link" href="/#placeholder">
+                                <img class="link_img" src="/Images/icon_ghiveci_s.png" /><div class="link_txt">Vases</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button yellow">
+                        <div>
+                            <a class="link" href="/#enviroment">
+                                <img class="link_img" src="/Images/icon_conditii_s.png" /><div class="link_txt">Enviroment</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button blue">
+                        <div>
+                            <a class="link" href="/#trees">
+                                <img class="link_img" src="/Images/tree.png" /><div class="link_txt">Trees</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button red">
+                        <div>
+                            <a class="link" href="/#gardens">
+                                <img class="link_img" src="/Images/garden.png" /><div class="link_txt">Gardens</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button yellow">
+                        <div>
+                            <a class="link" href="/#details">
+                                <img class="link_img" src="/Images/question.png" /><div class="link_txt">Details</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-placeholder right-part">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
