@@ -23,7 +23,22 @@ namespace ThirdEye
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css","~/Content/custom.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                        "~/Content/oltonMetroUI/css/modern-responsive.css",
+                        "~/Content/oltonMetroUI/css/modern.css",
+                        "~/Content/oltonMetroUI/javascript/accordion.js",
+                        "~/Content/oltonMetroUI/javascript/buttonset.js",
+                        "~/Content/oltonMetroUI/javascript/carousel.js",
+                        "~/Content/oltonMetroUI/javascript/dialog.js",
+                        "~/Content/oltonMetroUI/javascript/dropdown.js",
+                        "~/Content/oltonMetroUI/javascript/input-control.js",
+                        "~/Content/oltonMetroUI/javascript/pagecontrol.js",
+                        "~/Content/oltonMetroUI/javascript/rating.js",
+                        "~/Content/oltonMetroUI/javascript/slider.js",
+                        "~/Content/oltonMetroUI/javascript/start-menu.js",
+                        "~/Content/oltonMetroUI/javascript/tile-drag.js",
+                        "~/Content/oltonMetroUI/javascript/tile-slider.js"
+                        ));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

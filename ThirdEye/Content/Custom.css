@@ -153,8 +153,8 @@ a {
 #body {
     position: relative;
     float: left;
-    height: 93%;
-    width: 96%;
+    height: 100%;
+    width: 100%;
 }
 
 .menu {
